@@ -1,0 +1,97 @@
+/*CARDS*/
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: none;
+    margin-bottom: 20px;
+    display: flex;
+    margin-top: 20px;
+    align-self: normal;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 1.8rem;
+        margin-top: 20px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    h4 {
+        color: #661D58;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-top: auto;
+    }
+}
+
+.btnProductos {
+    display: inline-block;
+    background-color: #661D58;
+    color: #fafafa;
+    font-size: 1.7rem;
+    padding: 10px;
+    border: #661D58 solid 1px;
+    border-radius: 15px;
+    transition: all 0.3s;
+    margin-top: auto;
+
+    &:hover {
+        background-color: #9C4A8C;
+        color: #fafafa;
+    }
+}
+
+.modal h1 {
+    text-align: center;
+    color: #661D58;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+
+.btnSeguirComprando {
+    background-color: #661D58;
+    color: #fafafa;
+    font-size: 1.5rem;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: #9C4A8C;
+        border: none;
+        color: #fafafa;
+    }
+}
+
+.btnFinalizarCompra {
+    background-color: #B7B9B4;
+    color: #661D58;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 15px;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: lightgrey;
+        color: #661D58;
+    }
+}

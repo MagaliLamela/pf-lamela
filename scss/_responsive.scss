@@ -1,0 +1,19 @@
+/*RESPONSIVE*/
+
+@media (max-width: 768px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 85%;
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 100%;
+    }
+}

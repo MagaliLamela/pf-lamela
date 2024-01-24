@@ -1,0 +1,192 @@
+/*FOOTER*/
+
+footer {
+    width: 100%;
+}
+
+.footer1 {
+    width: 100%;
+    background-color: #661D58;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 50px;
+    color: #fafafa;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+    div {        
+        display: inline-block;
+        text-align: center;
+        text-wrap: balance;
+
+        h3 {
+            font-size: 1.7rem;
+            font-weight: bold;
+            text-align: center;
+            color: #fafafa;
+            text-wrap: nowrap;
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+            text-wrap: nowrap;
+        }
+
+        a img {
+            width: 2.4rem;
+            height: 2.4rem;
+            background-color: white;
+            margin: 1px;
+            border-radius: 5px;
+            padding: 3px;
+            margin-top: 6px;
+            margin-left: 4px;
+        }
+
+        img {
+            background-color: white;
+            margin: 1px;
+            border-radius: 5px;
+            margin-top: 7px;
+        }
+    }
+}
+
+#logoVisa {
+    padding: 8px;
+    width: 3.4rem;
+    height: 2.2rem;
+}
+
+#logoVisaDebito {
+    width: 3.4rem;
+    height: 2.2rem;
+}
+
+#logoMaster {
+    padding: 4px;
+    width: 3.4rem;
+    height: 2.2rem;
+}
+
+#logoAmex {
+    width: 3.4rem;
+    height: 2.2rem;
+}
+
+#logoMp {
+    padding: 4px;
+    width: 3.4rem;
+    height: 2.2rem;
+}
+
+.footer2 {
+    background-color: #9C4A8C;
+    font-size: 1rem;
+
+    p {
+        padding: 15px;
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            color: blue;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .localBelgrano {
+        grid-area: local1;
+    }
+
+    .localPalermo {
+        grid-area: local2;
+    }
+
+    .localRecoleta {
+        grid-area: local3;
+    }
+
+    .redes {
+        grid-area: redes;
+    }
+
+    .mediosDePago {
+        grid-area: mediosDePago;
+    }
+
+    .footer1 {
+        display: grid;
+        grid-template-areas: "none local1 .. redes" "none local2 .. mediosDePago" "none local3 .. mediosDePago";
+    }
+}
+
+@media (max-width: 500px) {
+    .localBelgrano {
+        grid-area: local1;
+    }
+
+    .localPalermo {
+        grid-area: local2;
+    }
+
+    .localRecoleta {
+        grid-area: local3;
+    }
+
+    .redes {
+        grid-area: redes;
+    }
+
+    .mediosDePago {
+        grid-area: mediosDePago;
+    }
+
+    .footer1 {
+        display: grid;
+        grid-template-areas: "local1 redes" "local2 mediosDePago" "local3 mediosDePago";
+    }
+}
+
+@media (max-width: 406px) {
+    .localBelgrano {
+        grid-area: local1;
+    }
+
+    .localPalermo {
+        grid-area: local2;
+    }
+
+    .localRecoleta {
+        grid-area: local3;
+    }
+
+    .redes {
+        grid-area: redes;
+    }
+
+    .mediosDePago {
+        grid-area: mediosDePago;
+    }
+
+    .footer1 {
+        display: grid;
+        grid-template-areas: ". local1 ." ". local2 ." ". local3 ." ". redes ." ". mediosDePago .";
+    }
+}
+
+/*LOGO WPP FIJO*/
+
+#logoWpp {
+    width: 4.4rem;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
