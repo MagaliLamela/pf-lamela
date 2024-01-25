@@ -63,36 +63,38 @@
 
     <main>
 
+        <h1 class="h1Servicios">Servicios</h1>
+
         <section> <!-- Sección veterinaria  -->
 
-            <h1>Clínica Veterinaria</h1>
+            <h2 class="h2Servicios">Clínica Veterinaria</h2>
 
-            <h2 class="h2Veterinaria">Contamos con los mejores Médicos Veterinarios con formación académica de calidad
+            <h3 class="h3Veterinaria">Contamos con los mejores Médicos Veterinarios con formación académica de calidad
                 para ofrecerles las herramientas necesarias para cuidar de tu mascota. Visítanos para poder ayudarte y
-                ayudar a tu compañero.</h2>
+                ayudar a tu compañero.</h3>
 
             <div class="listaVeterinaria">
-                <div>
+                <div class="iconoConsultorio">
                     <img src="../img/iconoconsultorio.png" alt="Ícono Consultorio">
                     <h3>Consultorio</h3>
                 </div>
-                <div>
+                <div class="iconoInternacion">
                     <img src="../img/iconointernacion.png" alt="Ícono Internación">
                     <h3>Internación</h3>
                 </div>
-                <div>
+                <div class="iconoCirugias">
                     <img src="../img/iconocirugia.png" alt="Ícono Cirugía">
                     <h3>Cirugías</h3>
                 </div>
-                <div>
+                <div class="iconoRayos">
                     <img src="../img/iconorayosx.png" alt="Ícono Rayos X">
                     <h3>Rayos X</h3>
                 </div>
-                <div>
+                <div class="iconoLaboratorio">
                     <img src="../img/iconolaboratorio.png" alt="Ícono Laboratorio">
                     <h3>Laboratorio</h3>
                 </div>
-                <div>
+                <div class="iconoEcografia">
                     <img src="../img/iconoecografia.png" alt="Ícono Ecografía">
                     <h3>Ecografías</h3>
                 </div>
@@ -102,10 +104,52 @@
                 <img src="../img/internacion.jpg" alt="Foto de Sector Internación">
                 <img src="../img/laboratorio.jpg" alt="Foto de Laboratorio">
             </div>
+
+            <div id="carouselExampleCaptions" class="carousel slide carouselVeterinaria mx-auto">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/consultorio.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Consultorio</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/internacion.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Internación</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/laboratorio.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Laboratorio</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
         </section>
 
         <section> <!-- Sección Peluquería -->
-            <h1>Peluquería Canina</h1>
+            <h2 class="h2Servicios">Peluquería Canina</h2>
             <div class="peluqueria">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/ItuczotsDok?si=kgQhF9_fyZG6WoqM"
                     title="YouTube video player" frameborder="0"
@@ -180,7 +224,8 @@
     </footer>
 
     <div>
-        <a target="_blank" href="https://api.whatsapp.com/send?phone=1170238323&text=¡Hola!%20¿Cómo%20podemos%20ayudarte?">
+        <a target="_blank"
+            href="https://api.whatsapp.com/send?phone=1170238323&text=¡Hola!%20¿Cómo%20podemos%20ayudarte?">
             <img id="logoWpp" src="../img/logowpp.png" alt="Logo de Whatsapp">
         </a>
     </div>

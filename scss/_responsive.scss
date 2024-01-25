@@ -17,3 +17,31 @@
         font-size: 100%;
     }
 }
+
+@media (min-width: 992px) {
+    .carouselVeterinaria {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .imagenesVeterinaria {
+        display: none;
+    }
+
+    .h3Veterinaria {
+        display: none;
+    }
+
+    .listaVeterinaria {
+        display: grid;
+        grid-template-areas: "icono1 icono2 icono3" "icono4 icono5 icono6";
+    }
+ }
+
+@media (max-width: 768px) {
+ .listaVeterinaria {
+    display: grid;
+    grid-template-areas: "icono1 icono2" "icono3 icono4" "icono5 icono6";
+}
+}
