@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Huellitas Veterinaria. Los mejores productos y servicios para mascotas. Comprá online desde tu casa. Alimentos balanceados. Más de 100 productos para tu mascota. Petshop animales.">
     <title>Huellitas - Veterinaria y PetShop Online</title>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="shortcut icon" href="img/logo.png">
@@ -123,15 +126,15 @@
             </div>
         </div>
 
-        <h1 class="h1Home">Promociones del mes</h1>
+        <h1 class="h1Home" data-aos="fade-right">Promociones del mes</h1>
 
         <!-- Cards -->
 
-        <div class="container-fluid">
+        <div class="container-fluid" data-aos="fade-right">
 
-            <div class="row m-3">
+            <div class="row">
 
-                <div class="card col-xl-3 col-md-6 col-sm-12">
+                <div class="card col-xl-3 col-md-6 col-sm-12 h-100 ">
                     <img src="img/promo1.png" class="card-img-top mx-auto" alt="Promo1 RC Mini Adult">
                     <h3 class="card-title">Royal Canin <br> Mini Adult 3 Kg</h3>
                     <h4>$9.270</h4>
@@ -140,7 +143,7 @@
                     </button>
                 </div>
 
-                <div class="card col-xl-3 col-md-6 col-sm-12">
+                <div class="card col-xl-3 col-md-6 col-sm-12 h-100">
                     <img src="img/promo2.png" class="card-img-top mx-auto" alt="Promo2 RC Fit">
                     <h3 class="card-title">Royal Canin Gato <br> Fit 1,5 Kg</h3>
                     <h4>$7.290</h4>
@@ -149,7 +152,7 @@
                     </button>
                 </div>
 
-                <div class="card col-xl-3 col-md-6 col-sm-12">
+                <div class="card col-xl-3 col-md-6 col-sm-12 h-100">
                     <img src="img/promo3.png" class="card-img-top mx-auto" alt="Promo3 RC Mini Puppy">
                     <h3 class="card-title">Royal Canin <br> Mini Puppy 3 Kg</h3>
                     <h4>$10.125</h4>
@@ -158,7 +161,7 @@
                     </button>
                 </div>
 
-                <div class="card col-xl-3 col-md-6 col-sm-12">
+                <div class="card col-xl-3 col-md-6 col-sm-12 h-100">
                     <img src="img/promo4.png" class="card-img-top mx-auto" alt="Promo4 RC Gato Indoor">
                     <h3 class="card-title">Royal Canin Gato <br> Indoor 1,5 Kg</h3>
                     <h4>$7.290</h4>
@@ -180,8 +183,10 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-footer justify-content-around">
-                        <button type="button" class="btn btn-secondary btnSeguirComprando" data-bs-dismiss="modal">Seguir Comprando</button>
-                        <a href="html/carrito-compra.html"><button type="button" class="btn btnFinalizarCompra">Finalizar Compra</button></a>
+                        <button type="button" class="btn btn-secondary btnSeguirComprando"
+                            data-bs-dismiss="modal">Seguir Comprando</button>
+                        <a href="html/carrito-compra.html"><button type="button"
+                                class="btn btnFinalizarCompra">Finalizar Compra</button></a>
                     </div>
                 </div>
             </div>
@@ -245,7 +250,8 @@
     </footer>
 
     <div>
-        <a target="_blank" href="https://api.whatsapp.com/send?phone=1170238323&text=¡Hola!%20¿Cómo%20podemos%20ayudarte?">
+        <a target="_blank"
+            href="https://api.whatsapp.com/send?phone=1170238323&text=¡Hola!%20¿Cómo%20podemos%20ayudarte?">
             <img id="logoWpp" src="img/logowpp.png" alt="Logo de Whatsapp">
         </a>
     </div>
@@ -254,6 +260,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
 </body>
 
 </html>

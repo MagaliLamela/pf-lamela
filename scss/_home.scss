@@ -1,7 +1,7 @@
 /*Home*/
 
 .carouselHome div div img {
-    height: 43.1rem;
+    height: 30rem;
     width: 100%;
 }
 
@@ -13,25 +13,25 @@
         display: flex inline-block;
 
         img {
-            height: 4rem;
+            height: 3.7rem;
             margin: 5%;
             margin-left: 37%;
         }
 
         div {
             h3 {
-                font-size: 1.6rem;
-                color: #661D58;
+                font-size: 1.4rem;
+                color: $colorPrincipal;
                 text-align: center;
                 text-transform: uppercase;
                 font-weight: bolder;
             }
 
             h4 {
-                font-size: 1.3rem;
+                font-size: 1.2rem;
                 text-align: center;
                 font-weight: bolder;
-                color: black;
+                color: $letraOscura;
             }
         }
     }
@@ -41,15 +41,16 @@
     .iconosHome {
         display: none;
     }
+
+    .carouselHome div div img {
+        height: 20rem;
+        width: 100%;
+    }
 }
 
 .h1Home {
-    background-color: #661D58;
-    font-weight: bold;
-    font-size: 2.5rem;
-    margin: 30px 0px;
-    color: #fafafa;
-    text-transform: uppercase;
-    text-align: center;
+    background-color: $colorPrincipal;
+    font-size: 2rem;
+    color: $letraClara;
     padding: 15px;
 }

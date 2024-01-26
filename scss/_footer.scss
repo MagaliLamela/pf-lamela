@@ -6,27 +6,27 @@ footer {
 
 .footer1 {
     width: 100%;
-    background-color: #661D58;
+    background-color: $colorPrincipal;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 50px;
-    color: #fafafa;
+    color: $letraClara;
     text-decoration: none;
     font-weight: bold;
     padding: 10px;
     padding-bottom: 20px;
     padding-top: 20px;
 
-    div {        
+    div {
         display: inline-block;
         text-align: center;
         text-wrap: balance;
 
         h3 {
-            font-size: 1.7rem;
+            font-size: 1.6rem;
             font-weight: bold;
             text-align: center;
-            color: #fafafa;
+            color: $letraClara;
             text-wrap: nowrap;
         }
 
@@ -37,15 +37,20 @@ footer {
             text-wrap: nowrap;
         }
 
-        a img {
-            width: 2.4rem;
-            height: 2.4rem;
-            background-color: white;
-            margin: 1px;
-            border-radius: 5px;
-            padding: 3px;
-            margin-top: 6px;
-            margin-left: 4px;
+        a {
+            text-decoration: none;
+
+
+            img {
+                width: 2.3rem;
+                height: 2.3rem;
+                background-color: white;
+                margin: 1px;
+                border-radius: 5px;
+                padding: 3px;
+                margin-top: 6px;
+                margin-left: 4px;
+            }
         }
 
         img {
@@ -59,43 +64,36 @@ footer {
 
 #logoVisa {
     padding: 8px;
-    width: 3.4rem;
-    height: 2.2rem;
+    @include iconosPago;
 }
 
 #logoVisaDebito {
-    width: 3.4rem;
-    height: 2.2rem;
+    @include iconosPago;
 }
 
 #logoMaster {
     padding: 4px;
-    width: 3.4rem;
-    height: 2.2rem;
+    @include iconosPago;
 }
 
 #logoAmex {
-    width: 3.4rem;
-    height: 2.2rem;
+    @include iconosPago;
 }
 
 #logoMp {
     padding: 4px;
-    width: 3.4rem;
-    height: 2.2rem;
+    @include iconosPago;
 }
 
 .footer2 {
-    background-color: #9C4A8C;
-    font-size: 1rem;
+    background-color: $colorSecundario;
+    font-size: 0.9rem;
 
     p {
-        padding: 15px;
+        padding: 10px;
 
         a {
-            text-decoration: none;
-            cursor: pointer;
-            color: blue;
+            @include anclas;
         }
     }
 }
@@ -184,7 +182,7 @@ footer {
 /*LOGO WPP FIJO*/
 
 #logoWpp {
-    width: 4.4rem;
+    width: 4rem;
     position: fixed;
     bottom: 20px;
     right: 20px;

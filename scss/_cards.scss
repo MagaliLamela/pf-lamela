@@ -8,7 +8,7 @@
 }
 
 .card {
-    border: none;
+    border: none;  
     margin-bottom: 20px;
     display: flex;
     margin-top: 20px;
@@ -16,58 +16,70 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
+    background-color: $letraClara;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: white;
+    }
 
     img {
         max-height: 100%;
         max-width: 100%;
+        transition: all 0.3s;
+
+        &:hover {
+            transform: scale(0.9, 0.9);
+        }
     }
 
     h3 {
         text-align: center;
-        font-size: 1.8rem;
-        margin-top: 20px;
+        font-size: 1.6rem;
+        margin-top: 15px;
         font-weight: bold;
-        margin-bottom: 15px;
+        margin-bottom: 12px;
     }
 
     h4 {
-        color: #661D58;
+        color: $colorPrincipal;
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: bold;
-        margin-bottom: 20px;
+        margin-bottom: 13px;
         margin-top: auto;
     }
 }
 
 .btnProductos {
     display: inline-block;
-    background-color: #661D58;
-    color: #fafafa;
-    font-size: 1.7rem;
+    background-color: $colorPrincipal;
+    color: $letraClara;
+    font-size: 1.4rem;
     padding: 10px;
-    border: #661D58 solid 1px;
+    border: $colorPrincipal solid 1px;
     border-radius: 15px;
     transition: all 0.3s;
     margin-top: auto;
 
     &:hover {
-        background-color: #9C4A8C;
-        color: #fafafa;
+        background-color: $colorSecundario;
+        color: $letraClara;
     }
 }
 
 .modal h1 {
     text-align: center;
-    color: #661D58;
+    color: $colorPrincipal;
     font-weight: bolder;
     text-transform: uppercase;
     font-size: 1.8rem;
 }
 
 .btnSeguirComprando {
-    background-color: #661D58;
-    color: #fafafa;
+    background-color: $colorPrincipal;
+    color: $letraClara;
     font-size: 1.5rem;
     padding: 10px;
     border: none;
@@ -75,15 +87,15 @@
     transition: all 0.3s;
 
     &:hover {
-        background-color: #9C4A8C;
+        background-color: $colorSecundario;
         border: none;
-        color: #fafafa;
+        color: $letraClara;
     }
 }
 
 .btnFinalizarCompra {
     background-color: #B7B9B4;
-    color: #661D58;
+    color: $colorPrincipal;
     font-size: 1.5rem;
     font-weight: bolder;
     padding: 10px;
@@ -92,6 +104,15 @@
 
     &:hover {
         background-color: lightgrey;
-        color: #661D58;
+        color: $colorPrincipal;
     }
+}
+
+@media (max-width: 1200px) {
+    .card {
+        img {
+            max-height: 30rem;
+            max-width: 30rem;
+        }
+}
 }

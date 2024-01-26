@@ -1,8 +1,10 @@
+/*VARIABLES*/
 /*FUENTES*/
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&family=Ubuntu&display=swap");
 /*GENERAL*/
 body {
   font-family: "M PLUS Rounded 1c", sans-serif;
+  background-color: #fafafa;
 }
 
 * {
@@ -12,12 +14,12 @@ body {
 
 /*MAIN*/
 h1 {
-  text-align: center;
   font-weight: bold;
-  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.6rem;
   margin: 30px 0px;
   color: #661D58;
-  text-transform: uppercase;
 }
 
 /*HEADER*/
@@ -37,14 +39,14 @@ nav ul li {
   margin: 0px 3vw;
 }
 nav ul li a {
-  color: #fafafa;
   text-decoration: none;
+  color: #fafafa;
   font-weight: bold;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
 }
 
 .dropdown-item {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: #661D58;
   font-weight: bolder;
   margin: 5px;
@@ -135,7 +137,7 @@ footer {
   text-wrap: balance;
 }
 .footer1 div h3 {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: bold;
   text-align: center;
   color: #fafafa;
@@ -147,9 +149,12 @@ footer {
   text-align: center;
   text-wrap: nowrap;
 }
+.footer1 div a {
+  text-decoration: none;
+}
 .footer1 div a img {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2.3rem;
+  height: 2.3rem;
   background-color: white;
   margin: 1px;
   border-radius: 5px;
@@ -166,43 +171,42 @@ footer {
 
 #logoVisa {
   padding: 8px;
-  width: 3.4rem;
-  height: 2.2rem;
+  width: 3rem;
+  height: 2rem;
 }
 
 #logoVisaDebito {
-  width: 3.4rem;
-  height: 2.2rem;
+  width: 3rem;
+  height: 2rem;
 }
 
 #logoMaster {
   padding: 4px;
-  width: 3.4rem;
-  height: 2.2rem;
+  width: 3rem;
+  height: 2rem;
 }
 
 #logoAmex {
-  width: 3.4rem;
-  height: 2.2rem;
+  width: 3rem;
+  height: 2rem;
 }
 
 #logoMp {
   padding: 4px;
-  width: 3.4rem;
-  height: 2.2rem;
+  width: 3rem;
+  height: 2rem;
 }
 
 .footer2 {
   background-color: #9C4A8C;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 .footer2 p {
-  padding: 15px;
+  padding: 10px;
 }
 .footer2 p a {
   text-decoration: none;
-  cursor: pointer;
-  color: blue;
+  color: #fafafa;
 }
 
 @media (max-width: 992px) {
@@ -270,7 +274,7 @@ footer {
 }
 /*LOGO WPP FIJO*/
 #logoWpp {
-  width: 4.4rem;
+  width: 4rem;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -279,7 +283,7 @@ footer {
 
 /*Home*/
 .carouselHome div div img {
-  height: 43.1rem;
+  height: 30rem;
   width: 100%;
 }
 
@@ -291,19 +295,19 @@ footer {
   display: flex inline-block;
 }
 .iconosHome div img {
-  height: 4rem;
+  height: 3.7rem;
   margin: 5%;
   margin-left: 37%;
 }
 .iconosHome div div h3 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #661D58;
   text-align: center;
   text-transform: uppercase;
   font-weight: bolder;
 }
 .iconosHome div div h4 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-align: center;
   font-weight: bolder;
   color: black;
@@ -313,15 +317,15 @@ footer {
   .iconosHome {
     display: none;
   }
+  .carouselHome div div img {
+    height: 20rem;
+    width: 100%;
+  }
 }
 .h1Home {
   background-color: #661D58;
-  font-weight: bold;
-  font-size: 2.5rem;
-  margin: 30px 0px;
+  font-size: 2rem;
   color: #fafafa;
-  text-transform: uppercase;
-  text-align: center;
   padding: 15px;
 }
 
@@ -342,24 +346,34 @@ footer {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
+  background-color: #fafafa;
+  transition: all 0.3s;
+}
+.card:hover {
+  background-color: white;
 }
 .card img {
   max-height: 100%;
   max-width: 100%;
+  transition: all 0.3s;
+}
+.card img:hover {
+  transform: scale(0.9, 0.9);
 }
 .card h3 {
   text-align: center;
-  font-size: 1.8rem;
-  margin-top: 20px;
+  font-size: 1.6rem;
+  margin-top: 15px;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 .card h4 {
   color: #661D58;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
   margin-top: auto;
 }
 
@@ -367,7 +381,7 @@ footer {
   display: inline-block;
   background-color: #661D58;
   color: #fafafa;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   padding: 10px;
   border: #661D58 solid 1px;
   border-radius: 15px;
@@ -416,35 +430,39 @@ footer {
   color: #661D58;
 }
 
+@media (max-width: 1200px) {
+  .card img {
+    max-height: 30rem;
+    max-width: 30rem;
+  }
+}
 /*Productos*/
 .h2Productos {
   margin: 30px;
   margin-left: 50px;
-  font-size: 2.3rem;
+  font-size: 2.1rem;
   font-weight: bolder;
 }
 
 /*Servicios*/
 .h1Servicios {
   text-align: left;
-  font-weight: bold;
-  font-size: 2.8rem;
-  margin: 30px 30px;
-  color: #661D58;
-  text-transform: uppercase;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 0;
 }
 
 .h2Servicios {
   text-align: center;
   font-weight: bold;
-  font-size: 3rem;
-  margin: 30px 0px;
+  font-size: 2.8rem;
+  margin: 20px;
   color: #661D58;
 }
 
 .h3Veterinaria {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin: 20px;
   color: black;
 }
@@ -453,12 +471,18 @@ footer {
   display: flex;
   justify-content: space-evenly;
 }
+.listaVeterinaria div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .listaVeterinaria div img {
-  height: 8rem;
-  width: 8rem;
+  height: 6rem;
+  width: 6rem;
 }
 .listaVeterinaria div h3 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: #661D58;
   text-align: center;
   font-weight: bold;
@@ -494,6 +518,7 @@ footer {
   flex-wrap: nowrap;
   margin: 10px 0px;
   width: 100vw;
+  margin-bottom: 40px;
 }
 .imagenesVeterinaria img {
   width: 33.333%;
@@ -505,8 +530,8 @@ footer {
 }
 .peluqueria iframe {
   margin: 20px;
-  width: 40rem;
-  height: 30rem;
+  width: 37rem;
+  height: 27rem;
 }
 .peluqueria ul {
   list-style-image: url(../img/iconoperro.png);
@@ -521,7 +546,7 @@ footer {
   justify-content: center;
 }
 .peluqueria ul li {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding-right: 10px;
   padding-left: 20px;
   margin-bottom: 20px;
@@ -533,6 +558,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
+  margin-top: 15px;
 }
 .carouselVeterinaria img {
   height: 30rem;
@@ -558,125 +585,179 @@ footer {
 /*Contacto*/
 .h2Contacto {
   text-align: center;
-  font-size: 40px;
+  font-size: 2.2rem;
   margin: 20px;
+  margin-bottom: 40px;
   color: black;
 }
 
-.redes h3 {
-  font-size: 40px;
+.redesFormulario {
+  display: flex;
+  justify-content: space-evenly;
+}
+.redesFormulario .redes {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: center;
+}
+.redesFormulario .redes h3 {
+  font-size: 2.1rem;
+  font-weight: bold;
   color: #661D58;
   margin-bottom: 10px;
 }
-
-.redesFormulario {
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.redes {
-  flex-direction: column;
-}
-
-.logosRedes {
+.redesFormulario .redes .logosRedes {
   flex-direction: row;
 }
-.logosRedes a img {
-  width: 55px;
-  height: 55px;
+.redesFormulario .redes .logosRedes a {
+  text-decoration: none;
+}
+.redesFormulario .redes .logosRedes a img {
+  width: 3rem;
+  height: 3rem;
   margin: 6px;
   border-radius: 5px;
-  margin-bottom: 530px;
   margin-left: 10px;
 }
-
-#logoFbContacto,
-#logo form {
-  margin-top: 60px;
-  margin-right: 50px;
-}
-
-input[type=text], input[type=email] {
+.redesFormulario form input[type=text], .redesFormulario form input[type=email] {
   display: block;
-  width: 130%;
-  padding: 15px;
+  width: 40vw;
+  height: 3.1rem;
+  padding: 10px;
   border: 2px solid gray;
   border-radius: 5px;
-  font-size: 22px;
-  margin-bottom: 30px;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
   margin-right: 20px;
 }
-
-textarea {
+.redesFormulario form textarea {
   display: block;
-  width: 130%;
-  padding: 15px;
+  width: 40vw;
+  height: 12rem;
+  padding: 10px;
   border: 2px solid gray;
   border-radius: 5px;
-  font-size: 22px;
-  margin-bottom: 30px;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
   margin-right: 20px;
 }
-
-input:focus,
-textarea:focus {
+.redesFormulario form input:focus,
+.redesFormulario form textarea:focus {
   outline: #661D58 solid 3px;
 }
-
-.botonFormulario {
+.redesFormulario form .btnContacto {
+  display: flex;
+  justify-content: space-around;
+}
+.redesFormulario form .btnContacto .botonFormulario {
   background-color: #661D58;
-  color: #fff;
+  color: #fafafa;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 1.2rem;
   cursor: pointer;
-  margin-right: 1px;
-  margin-left: 100px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
-.botonFormulario:active {
+.redesFormulario form .btnContacto .botonFormulario:active {
   background-color: #9C4A8C;
 }
 
-.mapa {
-  display: block;
-  margin-bottom: 40px;
+.h2Locales {
+  margin-bottom: 30px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #661D58;
+  text-align: center;
 }
 
 .mapaLocales {
-  text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
 }
-
-.localesTitulo {
-  margin-bottom: 160px;
-  margin-right: 90px;
+.mapaLocales .mapa {
+  margin-bottom: 30px;
+  width: 44rem;
+  height: 32rem;
 }
-.localesTitulo h3 {
-  margin-bottom: 60px;
-  font-size: 40px;
-  color: #661D58;
+.mapaLocales .locales {
+  display: flex;
+  flex-direction: column;
 }
-
-.locales {
-  margin-right: 300px;
-}
-.locales p {
-  font-size: 25px;
+.mapaLocales .locales div {
+  font-size: 1.3rem;
   text-align: start;
-  border: #661D58 solid 5px;
+  border: #9C4A8C solid 4px;
   padding: 10px;
-  padding-right: 200px;
-  margin: 15px;
+  margin: 8px;
+}
+.mapaLocales .locales div h3 {
+  color: #661D58;
+  font-weight: bolder;
+  text-align: center;
+}
+.mapaLocales .locales div p span {
+  font-weight: bold;
 }
 
+@media (max-width: 992px) {
+  .h2Contacto {
+    font-size: 1.8rem;
+  }
+  .redesFormulario {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+  .redesFormulario form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .redesFormulario form input[type=text], .redesFormulario form input[type=email] {
+    display: block;
+    width: 80vw;
+    height: 3.1rem;
+  }
+  .redesFormulario form textarea {
+    display: block;
+    width: 80vw;
+    height: 12rem;
+  }
+  .redesFormulario form .btnContacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .redesFormulario form .btnContacto .botonFormulario {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .redesFormulario .redes {
+    margin-bottom: 50px;
+  }
+  .redesFormulario .redes h3 {
+    text-align: center;
+  }
+  .mapaLocales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mapaLocales .mapa {
+    margin-bottom: 30px;
+    width: 90vw;
+    height: 25rem;
+    text-align: center;
+    align-items: center;
+  }
+  .mapaLocales .locales {
+    margin-bottom: 20px;
+  }
+}
 /*RESPONSIVE*/
 @media (max-width: 768px) {
   html {
