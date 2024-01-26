@@ -122,30 +122,9 @@
     align-items: center;
     margin-bottom: 30px;
     margin-top: 15px;
-    
+
     img {
         height: 30rem;
         width: 30rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .peluqueria {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        iframe {
-            width: 90vw;
-            height: 20rem;
-        }
-    }
-
-    .carouselVeterinaria {      
-        img {
-            height: 18rem;
-            width: 15rem;
-        }
     }
 }

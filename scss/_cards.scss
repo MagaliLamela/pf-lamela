@@ -8,7 +8,7 @@
 }
 
 .card {
-    border: none;  
+    border: none;
     margin-bottom: 20px;
     display: flex;
     margin-top: 20px;
@@ -106,13 +106,4 @@
         background-color: lightgrey;
         color: $colorPrincipal;
     }
-}
-
-@media (max-width: 1200px) {
-    .card {
-        img {
-            max-height: 30rem;
-            max-width: 30rem;
-        }
-}
 }

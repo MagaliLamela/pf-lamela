@@ -34,20 +34,6 @@ nav ul li {
     border: none;
 }
 
-@media (max-width: 992px) {
-    .dropdown-menu {
-        background-color: $colorPrincipal;
-    }
-
-    .dropdown-item {
-        color: $letraClara;
-    }
-
-    .dropdown-divider {
-        display: none;
-    }
-}
-
 .dropdown-divider {
     border-color: $colorSecundario;
     border: 1px solid $colorSecundario;
@@ -61,35 +47,4 @@ nav ul li {
 .navbar-toggler-icon {
     width: 40px;
     height: 40px;
-}
-
-@media (min-width: 992px) {
-    .nav-item:hover {
-        text-decoration: underline;
-        text-decoration-color: $letraClara;
-        text-decoration-thickness: 5px;
-        text-underline-offset: 15px;
-        transition: all 0.2s;
-    }
-}
-
-.carrito {
-    width: 40px;
-    border-radius: 100px;
-    cursor: pointer;
-    margin: 10px;
-}
-
-.buscador {
-    padding-right: 4px;
-    margin: 0;
-    font-size: 10px;
-}
-
-.logoBuscador {
-    background-color: white;
-    border-radius: 100px;
-    width: 40px;
-    margin: 10px;
-    cursor: pointer;
 }

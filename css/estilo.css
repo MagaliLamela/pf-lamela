@@ -57,17 +57,6 @@ nav ul li a {
   border: none;
 }
 
-@media (max-width: 992px) {
-  .dropdown-menu {
-    background-color: #661D58;
-  }
-  .dropdown-item {
-    color: #fafafa;
-  }
-  .dropdown-divider {
-    display: none;
-  }
-}
 .dropdown-divider {
   border-color: #9C4A8C;
   border: 1px solid #9C4A8C;
@@ -81,36 +70,6 @@ nav ul li a {
 .navbar-toggler-icon {
   width: 40px;
   height: 40px;
-}
-
-@media (min-width: 992px) {
-  .nav-item:hover {
-    text-decoration: underline;
-    text-decoration-color: #fafafa;
-    text-decoration-thickness: 5px;
-    text-underline-offset: 15px;
-    transition: all 0.2s;
-  }
-}
-.carrito {
-  width: 40px;
-  border-radius: 100px;
-  cursor: pointer;
-  margin: 10px;
-}
-
-.buscador {
-  padding-right: 4px;
-  margin: 0;
-  font-size: 10px;
-}
-
-.logoBuscador {
-  background-color: white;
-  border-radius: 100px;
-  width: 40px;
-  margin: 10px;
-  cursor: pointer;
 }
 
 /*FOOTER*/
@@ -209,69 +168,6 @@ footer {
   color: #fafafa;
 }
 
-@media (max-width: 992px) {
-  .localBelgrano {
-    grid-area: local1;
-  }
-  .localPalermo {
-    grid-area: local2;
-  }
-  .localRecoleta {
-    grid-area: local3;
-  }
-  .redes {
-    grid-area: redes;
-  }
-  .mediosDePago {
-    grid-area: mediosDePago;
-  }
-  .footer1 {
-    display: grid;
-    grid-template-areas: "none local1 .. redes" "none local2 .. mediosDePago" "none local3 .. mediosDePago";
-  }
-}
-@media (max-width: 500px) {
-  .localBelgrano {
-    grid-area: local1;
-  }
-  .localPalermo {
-    grid-area: local2;
-  }
-  .localRecoleta {
-    grid-area: local3;
-  }
-  .redes {
-    grid-area: redes;
-  }
-  .mediosDePago {
-    grid-area: mediosDePago;
-  }
-  .footer1 {
-    display: grid;
-    grid-template-areas: "local1 redes" "local2 mediosDePago" "local3 mediosDePago";
-  }
-}
-@media (max-width: 406px) {
-  .localBelgrano {
-    grid-area: local1;
-  }
-  .localPalermo {
-    grid-area: local2;
-  }
-  .localRecoleta {
-    grid-area: local3;
-  }
-  .redes {
-    grid-area: redes;
-  }
-  .mediosDePago {
-    grid-area: mediosDePago;
-  }
-  .footer1 {
-    display: grid;
-    grid-template-areas: ". local1 ." ". local2 ." ". local3 ." ". redes ." ". mediosDePago .";
-  }
-}
 /*LOGO WPP FIJO*/
 #logoWpp {
   width: 4rem;
@@ -313,15 +209,6 @@ footer {
   color: black;
 }
 
-@media (max-width: 500px) {
-  .iconosHome {
-    display: none;
-  }
-  .carouselHome div div img {
-    height: 20rem;
-    width: 100%;
-  }
-}
 .h1Home {
   background-color: #661D58;
   font-size: 2rem;
@@ -430,12 +317,6 @@ footer {
   color: #661D58;
 }
 
-@media (max-width: 1200px) {
-  .card img {
-    max-height: 30rem;
-    max-width: 30rem;
-  }
-}
 /*Productos*/
 .h2Productos {
   margin: 30px;
@@ -566,22 +447,6 @@ footer {
   width: 30rem;
 }
 
-@media (max-width: 768px) {
-  .peluqueria {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .peluqueria iframe {
-    width: 90vw;
-    height: 20rem;
-  }
-  .carouselVeterinaria img {
-    height: 18rem;
-    width: 15rem;
-  }
-}
 /*Contacto*/
 .h2Contacto {
   text-align: center;
@@ -703,6 +568,164 @@ footer {
   font-weight: bold;
 }
 
+/*RESPONSIVE*/
+/*GENERAL*/
+@media (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 85%;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 100%;
+  }
+}
+/*HEADER*/
+@media (max-width: 992px) {
+  .dropdown-menu {
+    background-color: #661D58;
+  }
+  .dropdown-item {
+    color: #fafafa;
+  }
+  .dropdown-divider {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .nav-item:hover {
+    text-decoration: underline;
+    text-decoration-color: #fafafa;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 15px;
+    transition: all 0.2s;
+  }
+}
+/*FOOTER*/
+@media (max-width: 992px) {
+  .localBelgrano {
+    grid-area: local1;
+  }
+  .localPalermo {
+    grid-area: local2;
+  }
+  .localRecoleta {
+    grid-area: local3;
+  }
+  .redes {
+    grid-area: redes;
+  }
+  .mediosDePago {
+    grid-area: mediosDePago;
+  }
+  .footer1 {
+    display: grid;
+    grid-template-areas: "none local1 .. redes" "none local2 .. mediosDePago" "none local3 .. mediosDePago";
+  }
+}
+@media (max-width: 500px) {
+  .localBelgrano {
+    grid-area: local1;
+  }
+  .localPalermo {
+    grid-area: local2;
+  }
+  .localRecoleta {
+    grid-area: local3;
+  }
+  .redes {
+    grid-area: redes;
+  }
+  .mediosDePago {
+    grid-area: mediosDePago;
+  }
+  .footer1 {
+    display: grid;
+    grid-template-areas: "local1 redes" "local2 mediosDePago" "local3 mediosDePago";
+  }
+}
+@media (max-width: 406px) {
+  .localBelgrano {
+    grid-area: local1;
+  }
+  .localPalermo {
+    grid-area: local2;
+  }
+  .localRecoleta {
+    grid-area: local3;
+  }
+  .redes {
+    grid-area: redes;
+  }
+  .mediosDePago {
+    grid-area: mediosDePago;
+  }
+  .footer1 {
+    display: grid;
+    grid-template-areas: ". local1 ." ". local2 ." ". local3 ." ". redes ." ". mediosDePago .";
+  }
+}
+/*HOME*/
+@media (max-width: 500px) {
+  .iconosHome {
+    display: none;
+  }
+  .carouselHome div div img {
+    height: 20rem;
+    width: 100%;
+  }
+}
+/*CARDS*/
+@media (max-width: 1200px) {
+  .card img {
+    max-height: 30rem;
+    max-width: 30rem;
+  }
+}
+/*SERVICIOS*/
+@media (min-width: 992px) {
+  .carouselVeterinaria {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .imagenesVeterinaria {
+    display: none;
+  }
+  .h3Veterinaria {
+    display: none;
+  }
+  .listaVeterinaria {
+    display: grid;
+    grid-template-areas: "icono1 icono2 icono3" "icono4 icono5 icono6";
+  }
+}
+@media (max-width: 768px) {
+  .listaVeterinaria {
+    display: grid;
+    grid-template-areas: "icono1 icono2" "icono3 icono4" "icono5 icono6";
+  }
+  .peluqueria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .peluqueria iframe {
+    width: 90vw;
+    height: 20rem;
+  }
+  .carouselVeterinaria img {
+    height: 18rem;
+    width: 15rem;
+  }
+}
+/*CONTACTO*/
 @media (max-width: 992px) {
   .h2Contacto {
     font-size: 1.8rem;
@@ -756,45 +779,6 @@ footer {
   }
   .mapaLocales .locales {
     margin-bottom: 20px;
-  }
-}
-/*RESPONSIVE*/
-@media (max-width: 768px) {
-  html {
-    font-size: 80%;
-  }
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 85%;
-  }
-}
-@media (min-width: 1200px) {
-  html {
-    font-size: 100%;
-  }
-}
-@media (min-width: 992px) {
-  .carouselVeterinaria {
-    display: none;
-  }
-}
-@media (max-width: 992px) {
-  .imagenesVeterinaria {
-    display: none;
-  }
-  .h3Veterinaria {
-    display: none;
-  }
-  .listaVeterinaria {
-    display: grid;
-    grid-template-areas: "icono1 icono2 icono3" "icono4 icono5 icono6";
-  }
-}
-@media (max-width: 768px) {
-  .listaVeterinaria {
-    display: grid;
-    grid-template-areas: "icono1 icono2" "icono3 icono4" "icono5 icono6";
   }
 }
 

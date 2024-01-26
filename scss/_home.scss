@@ -37,17 +37,6 @@
     }
 }
 
-@media (max-width: 500px) {
-    .iconosHome {
-        display: none;
-    }
-
-    .carouselHome div div img {
-        height: 20rem;
-        width: 100%;
-    }
-}
-
 .h1Home {
     background-color: $colorPrincipal;
     font-size: 2rem;
