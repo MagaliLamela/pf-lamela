@@ -21,15 +21,15 @@
 
     <header class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
-                <img class="logo" src="../img/logo.png" alt="Logo de Huellitas">
+            <a class="navbar-brand logo" href="../index.html">
+                <img class="imgLogo" src="../img/logo.png" alt="Logo de Huellitas">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <nav class="collapse navbar-collapse" id="navbarSupportedContent">
+            <nav class="collapse navbar-collapse menu" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 ms-auto p-2 text-center mx-auto">
                     <li class="nav-item">
                         <a class="active" aria-current="page" href="../index.html">Home</a>
@@ -54,14 +54,13 @@
                         <a href="contacto.html">Contacto</a>
                     </li>
                 </ul>
+                <div class="d-flex justify-content-center">
+                    <img class="buscador" src="../img/iconobuscador.png" alt="">
+                    <a href="carrito-compra.html">
+                        <img class="carrito" src="../img/iconocarrito.png" alt="">
+                    </a>
+                </div>
             </nav>
-            <!-- <form class="d-flex" role="search">
-                <input class="form-control buscador" type="search" placeholder="Buscar..." aria-label="Search">
-                <button class="btn" type="submit"><img class="logoBuscador" src="img/logobuscador.png" alt=""></button>
-            </form>
-            <a href="html/carrito-compra.html">
-                <img class="carrito" src="img/logocarrito.jpg" alt="">
-            </a> -->
         </div>
     </header>
 
@@ -154,13 +153,12 @@
 
         <section> <!-- Sección Peluquería -->
             <h2 class="h2Servicios" data-aos="fade-down">Peluquería Canina</h2>
-            <div class="peluqueria">
-                <iframe data-aos="fade-right" width="560" height="315"
-                    src="https://www.youtube.com/embed/ItuczotsDok?si=kgQhF9_fyZG6WoqM" title="YouTube video player"
-                    frameborder="0"
+            <div class="peluqueria" data-aos="fade-right">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ItuczotsDok?si=kgQhF9_fyZG6WoqM"
+                    title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
-                <ul data-aos="fade-left">
+                <ul>
                     <li> Corte y baño completo </li>
                     <li> Corte de razas </li>
                     <li> Baño hipoalergénico </li>

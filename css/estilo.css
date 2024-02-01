@@ -27,7 +27,7 @@ header {
   background-color: #661D58;
 }
 
-.logo {
+.imgLogo {
   width: 10vh;
   cursor: pointer;
   margin-left: 7vw;
@@ -70,6 +70,21 @@ nav ul li a {
 .navbar-toggler-icon {
   width: 40px;
   height: 40px;
+}
+
+.carrito {
+  cursor: pointer;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin: 5px;
+  margin-right: 15px;
+}
+
+.buscador {
+  width: 2.7rem;
+  height: 2.7rem;
+  margin: 5px;
+  cursor: pointer;
 }
 
 /*FOOTER*/
@@ -178,7 +193,7 @@ footer {
 }
 
 /*Home*/
-.carouselHome div div img {
+.carouselHome img {
   height: 30rem;
   width: 100%;
 }
@@ -223,8 +238,7 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
-.card {
+.row .card {
   border: none;
   margin-bottom: 20px;
   display: flex;
@@ -237,25 +251,25 @@ footer {
   background-color: #fafafa;
   transition: all 0.3s;
 }
-.card:hover {
+.row .card:hover {
   background-color: white;
 }
-.card img {
+.row .card img {
   max-height: 100%;
   max-width: 100%;
   transition: all 0.3s;
 }
-.card img:hover {
+.row .card img:hover {
   transform: scale(0.9, 0.9);
 }
-.card h3 {
+.row .card h3 {
   text-align: center;
   font-size: 1.6rem;
   margin-top: 15px;
   font-weight: bold;
   margin-bottom: 12px;
 }
-.card h4 {
+.row .card h4 {
   color: #661D58;
   text-align: center;
   font-size: 1.8rem;
@@ -263,21 +277,21 @@ footer {
   margin-bottom: 13px;
   margin-top: auto;
 }
-
-.btnProductos {
+.row .card .btnProductos {
   display: inline-block;
+  font-size: 1.4rem;
+  margin-top: auto;
   background-color: #661D58;
   color: #fafafa;
-  font-size: 1.4rem;
   padding: 10px;
   border: #661D58 solid 1px;
-  border-radius: 15px;
   transition: all 0.3s;
-  margin-top: auto;
+  border-radius: 15px;
 }
-.btnProductos:hover {
+.row .card .btnProductos:hover {
   background-color: #9C4A8C;
   color: #fafafa;
+  border: none;
 }
 
 .modal h1 {
@@ -287,23 +301,21 @@ footer {
   text-transform: uppercase;
   font-size: 1.8rem;
 }
-
-.btnSeguirComprando {
+.modal .btnSeguirComprando {
+  font-size: 1.5rem;
   background-color: #661D58;
   color: #fafafa;
-  font-size: 1.5rem;
   padding: 10px;
-  border: none;
-  border-radius: 15px;
+  border: #661D58 solid 1px;
   transition: all 0.3s;
+  border-radius: 15px;
 }
-.btnSeguirComprando:hover {
+.modal .btnSeguirComprando:hover {
   background-color: #9C4A8C;
-  border: none;
   color: #fafafa;
+  border: none;
 }
-
-.btnFinalizarCompra {
+.modal .btnFinalizarCompra {
   background-color: #B7B9B4;
   color: #661D58;
   font-size: 1.5rem;
@@ -312,7 +324,7 @@ footer {
   border-radius: 15px;
   transition: all 0.3s;
 }
-.btnFinalizarCompra:hover {
+.modal .btnFinalizarCompra:hover {
   background-color: lightgrey;
   color: #661D58;
 }
@@ -518,15 +530,22 @@ footer {
 .redesFormulario form .btnContacto .botonFormulario {
   background-color: #661D58;
   color: #fafafa;
-  border: none;
+  padding: 10px;
+  border: #661D58 solid 1px;
+  transition: all 0.3s;
   padding: 10px 20px;
-  border-radius: 5px;
   font-size: 1.2rem;
-  cursor: pointer;
   margin-bottom: 50px;
+  border-radius: 15px;
+}
+.redesFormulario form .btnContacto .botonFormulario:hover {
+  background-color: #9C4A8C;
+  color: #fafafa;
+  border: none;
 }
 .redesFormulario form .btnContacto .botonFormulario:active {
-  background-color: #9C4A8C;
+  border: #661D58 1px solid;
+  font-size: 1.3rem;
 }
 
 .h2Locales {
@@ -566,6 +585,113 @@ footer {
 }
 .mapaLocales .locales div p span {
   font-weight: bold;
+}
+
+/*CARRITO DE COMPRAS*/
+.tabla {
+  display: flex;
+  justify-content: center;
+  width: 75vw;
+  flex-direction: column;
+}
+.tabla table {
+  margin-bottom: 20px;
+}
+.tabla table .titulosCarrito {
+  background-color: #661D58;
+  color: #fafafa;
+}
+.tabla table tr {
+  border: lightgray 1px solid;
+  border-radius: 40px;
+  text-align: center;
+  padding: 10px;
+}
+.tabla table tr td {
+  text-align: center;
+  padding: 10px;
+}
+.tabla table tr td h2 {
+  font-size: 1.3rem;
+}
+.tabla table tr td h3 {
+  font-size: 1.1rem;
+}
+.tabla table tr td button {
+  background-color: #661D58;
+  color: #fafafa;
+  padding: 10px;
+  border: #661D58 solid 1px;
+  transition: all 0.3s;
+  width: 35px;
+  height: 35px;
+  border: lightgray 1px solid;
+  padding: 1px;
+}
+.tabla table tr td button:hover {
+  background-color: #9C4A8C;
+  color: #fafafa;
+  border: none;
+}
+.tabla table tr td .btnCarritoX {
+  border-radius: 8px;
+}
+.tabla table tr .celdaProducto {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.tabla table tr .celdaProducto .imgCarrito {
+  width: 120px;
+  height: 100px;
+}
+.tabla table tr .celdaProducto h3 {
+  color: #FC6736;
+  font-weight: bold;
+}
+.tabla table tr .celdaCantidad div {
+  display: flex;
+  justify-content: center;
+}
+.tabla table tr .celdaCantidad div h3 {
+  background-color: white;
+  border: lightgray 1px solid;
+  padding: 5px 15px;
+  height: 35px;
+}
+.tabla table tr .celdaCantidad div .btnCarritoIzq {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.tabla table tr .celdaCantidad div .btnCarritoDer {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.tabla table .celdaTotal {
+  background-color: lightgray;
+}
+.tabla table .celdaTotal h2 {
+  font-weight: bold;
+}
+.tabla .btnCarritoFinalizar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+.tabla .btnCarritoFinalizar button {
+  background-color: #661D58;
+  color: #fafafa;
+  padding: 10px;
+  border: #661D58 solid 1px;
+  transition: all 0.3s;
+  font-size: 1.3rem;
+  border-radius: 15px;
+  padding: 10px 15px;
+}
+.tabla .btnCarritoFinalizar button:hover {
+  background-color: #9C4A8C;
+  color: #fafafa;
+  border: none;
 }
 
 /*RESPONSIVE*/
@@ -688,7 +814,7 @@ footer {
   }
 }
 /*SERVICIOS*/
-@media (min-width: 992px) {
+@media (min-width: 993px) {
   .carouselVeterinaria {
     display: none;
   }
@@ -779,6 +905,43 @@ footer {
   }
   .mapaLocales .locales {
     margin-bottom: 20px;
+  }
+}
+/*CARRITO DE COMPRAS*/
+@media (min-width: 769px) {
+  .tabla2 {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .tabla1 {
+    display: none;
+  }
+  .tabla2 {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+  }
+  .tabla2 td:last-child {
+    text-align: end;
+    padding-right: 10px;
+  }
+  .tabla2 td:first-child {
+    text-align: start;
+    padding-right: 40px;
+  }
+  .tabla2 td:first-child h2 {
+    font-weight: bolder;
+  }
+  .tabla2 .celdaCantidad {
+    display: flex;
+    justify-content: end;
+  }
+  .tabla2 .btnCarritoFinalizar {
+    justify-content: center;
+  }
+  .tabla2 .btnCarritoFinalizar button {
+    padding: 15px 35px;
   }
 }
 

@@ -83,17 +83,15 @@
 
 
             .botonFormulario {
-                background-color: $colorPrincipal;
-                color: $letraClara;
-                border: none;
+                @include botonPrincipal;
                 padding: 10px 20px;
-                border-radius: 5px;
                 font-size: 1.2rem;
-                cursor: pointer;
                 margin-bottom: 50px;
+                border-radius: 15px;
 
                 &:active {
-                    background-color: $colorSecundario;
+                    border: $colorPrincipal 1px solid;
+                    font-size: 1.3rem;
                 }
             }
         }

@@ -156,7 +156,7 @@
 
 /*SERVICIOS*/
 
-@media (min-width: 992px) {
+@media (min-width: 993px) {
     .carouselVeterinaria {
         display: none;
     }
@@ -276,5 +276,53 @@
             margin-bottom: 20px;
         }
 
+    }
+}
+
+/*CARRITO DE COMPRAS*/
+
+@media (min-width: 769px) {
+    .tabla2 {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .tabla1 {
+        display: none;
+    }
+
+    .tabla2 {
+        display: flex;
+        justify-content: center;
+        width: 90vw;
+
+        td:last-child {
+            text-align: end;
+            padding-right: 10px;
+
+        }
+
+        td:first-child {
+            text-align: start;
+            padding-right: 40px;
+
+            h2 {
+                font-weight: bolder;
+            }
+        }
+
+        .celdaCantidad {
+            display: flex;
+            justify-content: end;
+        }
+
+        .btnCarritoFinalizar {
+            justify-content: center;
+
+            button {
+                padding: 15px 35px;
+            }
+        }
     }
 }
