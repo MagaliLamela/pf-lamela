@@ -1,9 +1,18 @@
 /*Home*/
 
-.carouselHome img {
-    height: 30rem;
-    width: 100%;
+.carouselHome {
+    width: 88vw;
+    margin: auto;
+    margin-top: 3px;
+    border: $colorSecundario 8px double;
+
+    img {
+        object-fit: fill;
+        height: 30rem;
+        width: 100%;
+    }
 }
+
 
 .iconosHome {
     display: flex;

@@ -37,12 +37,19 @@
 }
 
 @media (min-width: 992px) {
-    .nav-item:hover {
+    .nav-item {
         text-decoration: underline;
-        text-decoration-color: $letraClara;
+        text-decoration-color: $colorPrincipal;
         text-decoration-thickness: 5px;
-        text-underline-offset: 15px;
-        transition: all 0.2s;
+        text-underline-offset: 10px;
+        transition: all 0.3s;
+
+        &:hover {
+            text-decoration: underline;
+            text-decoration-color: $letraClara;
+            text-decoration-thickness: 5px;
+            text-underline-offset: 10px;
+        }
     }
 }
 
@@ -131,14 +138,19 @@
 
 /*HOME*/
 
+@media (max-width: 800px) {
+    .carouselHome img {
+        height: 25rem;
+    }
+}
+
 @media (max-width: 500px) {
     .iconosHome {
         display: none;
     }
 
-    .carouselHome div div img {
-        height: 20rem;
-        width: 100%;
+    .carouselHome img {
+        height: 17rem;
     }
 }
 

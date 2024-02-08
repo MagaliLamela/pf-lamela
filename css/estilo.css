@@ -193,7 +193,14 @@ footer {
 }
 
 /*Home*/
+.carouselHome {
+  width: 88vw;
+  margin: auto;
+  margin-top: 3px;
+  border: #9C4A8C 8px double;
+}
 .carouselHome img {
+  object-fit: fill;
   height: 30rem;
   width: 100%;
 }
@@ -294,12 +301,44 @@ footer {
   border: none;
 }
 
+.modal img {
+  height: 80px;
+  margin: 10px;
+  animation-name: carritoSaltando;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes carritoSaltando {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
 .modal h1 {
   text-align: center;
   color: #661D58;
   font-weight: bolder;
   text-transform: uppercase;
   font-size: 1.8rem;
+  margin: 10px;
 }
 .modal .btnSeguirComprando {
   font-size: 1.5rem;
@@ -408,13 +447,13 @@ footer {
 .imagenesVeterinaria {
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: nowrap;
   margin: 10px 0px;
-  width: 100vw;
+  padding: 0;
+  width: 100%;
   margin-bottom: 40px;
 }
 .imagenesVeterinaria img {
-  width: 33.333%;
+  width: 33.333333%;
 }
 
 .peluqueria {
@@ -724,12 +763,18 @@ footer {
   }
 }
 @media (min-width: 992px) {
+  .nav-item {
+    text-decoration: underline;
+    text-decoration-color: #661D58;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 10px;
+    transition: all 0.3s;
+  }
   .nav-item:hover {
     text-decoration: underline;
     text-decoration-color: #fafafa;
     text-decoration-thickness: 5px;
-    text-underline-offset: 15px;
-    transition: all 0.2s;
+    text-underline-offset: 10px;
   }
 }
 /*FOOTER*/
@@ -797,13 +842,17 @@ footer {
   }
 }
 /*HOME*/
+@media (max-width: 800px) {
+  .carouselHome img {
+    height: 25rem;
+  }
+}
 @media (max-width: 500px) {
   .iconosHome {
     display: none;
   }
-  .carouselHome div div img {
-    height: 20rem;
-    width: 100%;
+  .carouselHome img {
+    height: 17rem;
   }
 }
 /*CARDS*/
