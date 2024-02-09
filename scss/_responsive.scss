@@ -34,6 +34,10 @@
     .dropdown-divider {
         display: none;
     }
+
+    .logo {
+        width: 8.5vh;
+    }
 }
 
 @media (min-width: 992px) {
@@ -50,6 +54,10 @@
             text-decoration-thickness: 5px;
             text-underline-offset: 10px;
         }
+    }
+
+    .buscadorCarrito {
+        margin-right: 5vw;
     }
 }
 
@@ -105,34 +113,14 @@
 
     .footer1 {
         display: grid;
-        grid-template-areas: "local1 redes" "local2 mediosDePago" "local3 mediosDePago";
+        grid-template-areas: "local1 . redes" "local2 . mediosDePago" "local3 . none";
     }
 }
 
-@media (max-width: 406px) {
-    .localBelgrano {
-        grid-area: local1;
-    }
-
-    .localPalermo {
-        grid-area: local2;
-    }
-
-    .localRecoleta {
-        grid-area: local3;
-    }
-
-    .redes {
-        grid-area: redes;
-    }
-
-    .mediosDePago {
-        grid-area: mediosDePago;
-    }
-
+@media (max-width: 450px) {
     .footer1 {
-        display: grid;
-        grid-template-areas: ". local1 ." ". local2 ." ". local3 ." ". redes ." ". mediosDePago .";
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -153,18 +141,6 @@
         height: 17rem;
     }
 }
-
-/*CARDS*/
-
-@media (max-width: 1200px) {
-    .card {
-        img {
-            max-height: 30rem;
-            max-width: 30rem;
-        }
-    }
-}
-
 
 /*SERVICIOS*/
 
