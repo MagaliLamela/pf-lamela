@@ -88,12 +88,15 @@ footer {
 .footer2 {
     background-color: $colorSecundario;
     font-size: 0.9rem;
+    color: $letraClara;
 
     p {
         padding: 10px;
 
         a {
             @include anclas;
+            text-decoration: underline;
+            text-underline-offset: 2px;
         }
     }
 }
